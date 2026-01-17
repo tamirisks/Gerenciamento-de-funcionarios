@@ -1,5 +1,11 @@
 # Gerenciamento-de-funcionários
-Programa feito como estudo sobre banco de dados e java.
+Projeto ainda em construção!
+
+# Idéia do projeto
+Um programa simples, onde possa ser possível gerenciar a entrada e saída de funcionários de uma empresa, além de informar se o funcionário esteve presente no trabalho no dia. O programa deve também ser capaz de informar em arquivo csv, além de ter atualizações na tabela sempre que o programa for aberto.
+
+# Linguagens e programas
+Programa feito com o uso de Figma, o programa Netbeans, a linguagem java, a interface gráfica com swing, e o banco de dados MySQL.
 
 ## Partes do projeto:
 ### 1° Wireframe criado no Figma
