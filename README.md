@@ -20,3 +20,18 @@ Wireframe com 3 telas:
 * **Tela de edição** - Após clicar no botão de editar o usuário, aparecerá uma nova tela só pra esse funcionário, onde é possível editar o seu nome, email, horário de trabalho e marcar uma checkbox se o funcionário trabalhou naquele dia. Na tela, também terá um botão de para salvar as novas informações.
 
 [Wwireframes com as 3 telas:] (https://www.figma.com/proto/2Rf1uuEaiUeqdZ5BIbmfey/Wireframes-do-gerenciamento?node-id=1-2&p=f&t=VFdknj537iP4U6Dd-0&scaling=min-zoom&content-scaling=fixed&page-id=0%3A1)) 
+
+### 2° Criação das telas no Netbeans
+Criação de 3 telas:
+
+* **Tela Inicial** - Tela com 1 jPanel; 1 jLabel ("Gerenciamento de Funcionários"); e 1 JButton (botao_relatorio).
+  
+* **Tela de seleção** -  Tela com 1 jLabel ("Deseja editar ou apagar o usuário?"); e 3 JButton (botao_editar, botao_excluir e botao_cancelar).
+    
+* **Tela de edição** - Tela com 6 Jlabel ("Editar usuário:","Nome:","Email:","Entrada:","Saída:" e "Trabalhou hoje?"); 2 JRadioButton ("Sim" ou "Não"); 1 JButton (botao_salvar) e 4 JTextField (nome_text, email_text, entrada_text e saida_text).
+
+
+
+
+
+
