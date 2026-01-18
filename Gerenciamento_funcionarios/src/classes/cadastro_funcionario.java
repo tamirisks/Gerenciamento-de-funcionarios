@@ -1,15 +1,16 @@
 
 package classes;
 
-import java.time.LocalDate;
+import java.time.LocalTime;
 
 
 public class cadastro_funcionario {
     
     private String nome;
     private String email;
-    private LocalDate entrada;
-    private LocalDate saida;
+    private LocalTime entrada;
+    private LocalTime saida;
+    private String trabalhou_hoje;
 
     public String getNome() {
         return nome;
@@ -27,22 +28,28 @@ public class cadastro_funcionario {
         this.email = email;
     }
 
-    public LocalDate getEntrada() {
+    public LocalTime getEntrada() {
         return entrada;
     }
 
-    public void setEntrada(LocalDate entrada) {
+    public void setEntrada(LocalTime entrada) {
         this.entrada = entrada;
     }
 
-    public LocalDate getSaida() {
+    public LocalTime getSaida() {
         return saida;
     }
 
-    public void setSaida(LocalDate saida) {
+    public void setSaida(LocalTime saida) {
         this.saida = saida;
     }
-    
-    
-    
+
+    public String getTrabalhou_hoje() {
+        return trabalhou_hoje;
+    }
+
+    public void setTrabalhou_hoje(String trabalhou_hoje) {
+        this.trabalhou_hoje = trabalhou_hoje;
+    }
+      
 }
