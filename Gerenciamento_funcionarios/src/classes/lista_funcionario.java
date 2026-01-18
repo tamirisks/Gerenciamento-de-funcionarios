@@ -12,9 +12,11 @@ public class lista_funcionario {
         return DadosFuncionario;
     }
 
-    public static void setDadosPaciente(cadastro_funcionario funcionario) {
+    public static void setDadosFuncionario(cadastro_funcionario funcionario) {
         DadosFuncionario.add(funcionario);
     }    
+
+   
 }
     
 
