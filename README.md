@@ -24,7 +24,7 @@ Wireframe com 3 telas:
 ### 2° Criação das telas no Netbeans
 Criação de 3 telas:
 
-* **Tela Inicial** - Tela com 1 jPanel; 1 jLabel ("Gerenciamento de Funcionários"); e 1 JButton (botao_relatorio).
+* **Tela Inicial** - Tela com 1 jPanel; 1 jLabel ("Gerenciamento de Funcionários"); e 1 JButton (botao_relatorio). **Alterado:** Adicionado um JButton a mais ("Novo funcionário").
   
 * **Tela de seleção** -  Tela com 1 jLabel ("Deseja editar ou apagar o usuário?"); e 3 JButton (botao_editar, botao_excluir e botao_cancelar).
     
