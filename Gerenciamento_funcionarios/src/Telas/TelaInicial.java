@@ -1,10 +1,42 @@
 
 package Telas;
 
+import classes.cadastro_funcionario;
+import classes.lista_funcionario;
+import java.util.List;
+import javax.swing.table.DefaultTableModel;
+
 public class TelaInicial extends javax.swing.JFrame {
 
     public TelaInicial() {
         initComponents();
+        
+        atualizarTabela();
+    }
+    
+    public void atualizarTabela() {
+        String[] colunas = {
+            "Nome", "Email", "Entrada", "Saída",
+            "Trabalou hoje?"
+        };
+        
+        DefaultTableModel tableModel = new DefaultTableModel(colunas, 0);
+        
+        List<cadastro_funcionario> listaCompleta = lista_funcionario.getDadosFuncionario();
+
+        for (cadastro_funcionario p : listaCompleta) {
+            String[] linha = {
+                p.getNome(),
+                p.getEmail(),
+                p.getEntrada().toString(),
+                p.getSaida().toString(),
+                p.getTrabalhou_hoje()
+            };
+            tableModel.addRow(linha);
+        }
+
+        tabela_dados.setModel(tableModel);
+        
     }
 
     @SuppressWarnings("unchecked")
@@ -14,7 +46,7 @@ public class TelaInicial extends javax.swing.JFrame {
         jLabel1 = new javax.swing.JLabel();
         jPanel1 = new javax.swing.JPanel();
         jScrollPane1 = new javax.swing.JScrollPane();
-        jTable1 = new javax.swing.JTable();
+        tabela_dados = new javax.swing.JTable();
         botao_relatorio = new javax.swing.JButton();
         botao_novo = new javax.swing.JButton();
 
@@ -23,18 +55,7 @@ public class TelaInicial extends javax.swing.JFrame {
         jLabel1.setFont(new java.awt.Font("Segoe UI", 1, 24)); // NOI18N
         jLabel1.setText("Gerenciamento de Funcionários");
 
-        jTable1.setModel(new javax.swing.table.DefaultTableModel(
-            new Object [][] {
-                {null, null, null, null},
-                {null, null, null, null},
-                {null, null, null, null},
-                {null, null, null, null}
-            },
-            new String [] {
-                "Title 1", "Title 2", "Title 3", "Title 4"
-            }
-        ));
-        jScrollPane1.setViewportView(jTable1);
+        jScrollPane1.setViewportView(tabela_dados);
 
         javax.swing.GroupLayout jPanel1Layout = new javax.swing.GroupLayout(jPanel1);
         jPanel1.setLayout(jPanel1Layout);
@@ -138,6 +159,7 @@ public class TelaInicial extends javax.swing.JFrame {
     private javax.swing.JLabel jLabel1;
     private javax.swing.JPanel jPanel1;
     private javax.swing.JScrollPane jScrollPane1;
-    private javax.swing.JTable jTable1;
+    private javax.swing.JTable tabela_dados;
     // End of variables declaration//GEN-END:variables
 }
+        
